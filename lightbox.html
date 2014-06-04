@@ -23,10 +23,8 @@ jQuery(document).ready(function($) {
 	    if (st > lastScroll){
 	        var divWidth = scrollDiv.width();
 	        var divHeight = scrollDiv.height();
-            var imgWidth = $("img").width();
 	        if(divWidth >= minWidth) { 				//keep minimum width at 50px to still be readable
 	        	divWidth-=15; 						//decrease width by 17px on scroll down
-                imgWidth-=5;
 	        	scrollDiv.css({width:divWidth,});
 	        }
 	    } 
@@ -46,12 +44,14 @@ jQuery(document).ready(function($) {
 
 	<div id="lightbox">
 		<div id="content">
-            <img src="img/kitteh.jpg" alt="kitteh" class="kitteh">
-            <img src="img/kitteh.jpg" alt="kitteh" class="kitteh">
-            <img src="img/kitteh.jpg" alt="kitteh" class="kitteh">
-            <img src="img/kitteh.jpg" alt="kitteh" class="kitteh">
-            <img src="img/kitteh.jpg" alt="kitteh" class="kitteh">
-            <img src="img/kitteh.jpg" alt="kitteh" class="kitteh">
+			<div id="image">
+	            <img src="img/kitteh.jpg" alt="kitteh" class="kitteh">
+	            <img src="img/kitteh.jpg" alt="kitteh" class="kitteh">
+	            <img src="img/kitteh.jpg" alt="kitteh" class="kitteh">
+	            <img src="img/kitteh.jpg" alt="kitteh" class="kitteh">
+	            <img src="img/kitteh.jpg" alt="kitteh" class="kitteh">
+	            <img src="img/kitteh.jpg" alt="kitteh" class="kitteh">
+	        </div>
 			<div id="passage"></div>
 			<div id="author"></div>
 		</div>
